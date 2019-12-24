@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Version ,VERSION} from '@angular/core'; 
 
 @Component({
   selector: 'app-welcome',
@@ -12,6 +13,7 @@ export class WelcomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('You are using Angular Version: '+new Version(VERSION.full).full);
   }
 
 }
